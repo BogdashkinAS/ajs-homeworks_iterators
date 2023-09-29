@@ -11,10 +11,12 @@ persons.push(new Team('Повозчик', 'Zombie', 90, 3, 25, 25));
 
 const iterator = persons[Symbol.iterator]();
 
-console.log(iterator.next()); // Выдается: value: Team {name: 'Лучник', type: 'Bowman', health: 50, level: 1, attack: 40, defence: 10}, done: false}
+console.log(iterator.next());
+// {name: 'Лучник', type: 'Bowman', health: 50, level: 1, attack: 40, defence: 10}, done: false}
 console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
-console.log(iterator.next()); // Выдается: { value: undefined, done: true }
+console.log(iterator.next());
+// Выдается: { value: undefined, done: true }
